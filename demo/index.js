@@ -753,10 +753,10 @@ function setupMenu() {
   menu.models.addHTML('<hr style="border-style: inset; border-color: dimgray">');
   menu.models.addBool('object detection', userConfig.object, 'enabled', (val) => userConfig.object.enabled = val);
   menu.models.addHTML('<hr style="border-style: inset; border-color: dimgray">');
-  menu.models.addBool('face compare', compare, 'enabled', (val) => {
-    compare.enabled = val;
-    compare.original = null;
-  });
+  // menu.models.addBool('face compare', compare, 'enabled', (val) => {
+  //   compare.enabled = val;
+  //   compare.original = null;
+  // });
 
   for (const m of Object.values(menu)) m.hide();
 
